@@ -1,0 +1,92 @@
+<html>
+
+<head>
+
+
+<title>FORM</title>
+<link rel="stylesheet" type="text/css" href="basic.css">
+
+<script src="java.js">
+</script> 
+
+
+
+
+</head>
+
+
+
+<body>
+<script src="java.js"></script>
+
+
+
+<form>
+    
+<img src="PIZ.jpg" width:40%">
+
+<div>
+    <h1>Pizza delivery</h1>
+    <p style="color: white;">Order pizza online and have it deliver at home.</p>
+  </div>
+  
+
+
+<label style="color: white;" for="finame">First name:</label><br>
+<input type="text" id="fname" required onblur="checkfield()"><br>
+<p style="color: green;" style="font-size:x-large;" id="p1"></p>
+
+<label style="color:white;" for="laname">Last name:</label><br>
+<input type="text" id="lname" required onblur="checkfield2()"><br>
+<p style="color: green;" style="font-size:x-large;" id="p2"></p>
+
+<label style="color: white;" for="email">Enter your email:</label><br>
+<input type="email" id="email" name="email"><br>
+
+<label style="color: white;" for="phone">Enter your phone number:</label><br>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+<p style="color: grey;" >Use format XXX-XX-XXX</p>
+
+<label style="color: white;" for="pass">User password</label><br>
+<input type="password" name="Password"><br>
+
+<label style="color: white;" for="lname">Choose size:</label><br>
+<input style="color: white;" type="radio" name="food" value="Pizza" checked><label style="color: white;" for="lname">Small</label><br>
+<input style="color: white;" type="radio" name="food" value="Burger"><label style="color: white;" for="lname">Medium</label><br>
+<input style="color:white;" type="radio" name="food" value="Taco"><label style="color: white;" for="lname">Large</label><br>
+
+<label style="color: white;" for="name">Choose toppings:</label><br>
+<input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" style="color: white;">
+<label style="color: white;" for="Pepperoni">Pepperoni</label><br>
+<input type="checkbox" id="Mushroom" name="Mushroom" value="Mushroom" style="color: white;">
+<label style="color: white;" for="vehicle2"> Mushroom</label><br>
+<input type="checkbox" id="Onions" name="Onions" value="Onions" style="color: white;">
+<label style="color: white;" for="vehicle3"> Onions</label><br>
+
+
+<label style="color: white;" for="quantity">Quantity:</label><br>
+<input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+
+
+<label for="del">Choose delivery date:</label><br>
+<input type="date" id="del" name="del"><br>
+
+<label style="color:white;" for="add">Address:</label><br>
+<input type="text" name="Last name"><br>
+
+
+
+
+<button class="button" onclick="order()">Order</button>
+
+
+</form>
+
+<p style="color: white;" id="para"></p>
+
+
+
+
+</body>
+
+</html>
